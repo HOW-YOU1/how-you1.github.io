@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSukaj Remote Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one calm reading column, a header strip like the app's sidebar label, two anchored sections (#support, #privacy). */
+:root{
+  --bg:#F6F7F8; --surface:#FFFFFF; --line:#DDE1E5; --fg:#15181B; --muted:#5C646D; --accent:#B87400; --accent-ink:#241500;
+  --sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0D0E10;--surface:#16181B;--line:#2A2E33;--fg:#EDEFF2;--muted:#9AA1AA;--accent:#FFB020;--accent-ink:#241500;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D0E10;--surface:#16181B;--line:#2A2E33;--fg:#EDEFF2;--muted:#9AA1AA;--accent:#FFB020;--accent-ink:#241500;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.6;padding-inline:16px;padding-block:0 48px}
+.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+header{padding-block:32px 8px;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:1.6px;color:var(--accent)}
+h1{margin:0;font-size:2rem;line-height:1.2;font-weight:700;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:62ch}
+nav{display:flex;gap:8px;flex-wrap:wrap;padding-block:6px 18px}
+nav a{font-size:14px;font-weight:600;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--surface)}
+nav a:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section{display:flex;flex-direction:column;gap:14px;scroll-margin-top:16px}
+h2{margin:0;font-size:1.4rem;line-height:1.3;text-wrap:balance}
+h3{margin:8px 0 0;font-size:1.05rem}
+p,li{max-width:66ch}
+p{margin:0}
+ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted)}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.contact .addr{font-family:var(--mono);font-size:15px;user-select:all;word-break:break-all}
+dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+dt{font-weight:600}
+dd{margin:0;color:var(--muted)}
+a{color:var(--accent)}
+code{font-family:var(--mono);font-size:.92em}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+
+
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">GSUKAJ REMOTE</div>
+    <h1>Support and privacy</h1>
+    <p class="lede">GSukaj Remote is a DMX lighting controller for film sets and stages. It runs on iPhone, iPad and Android, and sends sACN and Art-Net to lighting on your WiFi.</p>
+    <nav aria-label="On this page"><a href="#support">Support</a><a href="#privacy">Privacy policy</a></nav>
+  </header>
+
+  <section id="support" aria-labelledby="support-h">
+    <h2 id="support-h">Support</h2>
+    <div class="contact">
+      <div class="label">Contact</div>
+      <div class="addr" id="support-email">G.sukaj@hotmail.com</div>
+      <p>Tell us your device, the app version (Settings in the app) and what you were doing. A screenshot helps.</p>
+    </div>
+
+    <h3>Common questions</h3>
+    <dl>
+      <div><dt>My lights don't respond</dt><dd>Make sure the phone and the lights or receiver are on the same WiFi network, and that GSukaj Remote is allowed Local Network access (iPhone: Settings › Privacy &amp; Security › Local Network). Check the universe's IP address or multicast setting under More › Universes. Some routers block multicast between 2.4 GHz and 5/6 GHz bands; use unicast to the device's IP if multicast doesn't arrive.</dd></div>
+      <div><dt>What are the options?</dt><dd>On iPhone and iPad there are two: a yearly subscription that starts with a 7-day free trial, or a one-off lifetime unlock with no subscription. The app shows the price in your own currency.</dd></div>
+      <div><dt>How does the free trial work?</dt><dd>Tap Start 7-day free trial and confirm with your Apple Account. Nothing is charged for 7 days and everything works. Cancel before the week ends (Settings › Purchases › Manage subscription, or your App Store account settings) and you pay nothing. Otherwise the yearly subscription starts after 7 days. The app reminds you 2 days before the trial ends.</dd></div>
+      <div><dt>What happens if my subscription ends?</dt><dd>The app still opens and keeps all your shows and stages, but it stops sending DMX until you subscribe again or buy the lifetime unlock.</dd></div>
+      <div><dt>I paid but it's locked</dt><dd>Open Settings › Purchases and tap Restore purchases while signed in with the same Apple Account you paid with.</dd></div>
+      <div><dt>How do I cancel?</dt><dd>Settings › Purchases › Manage subscription in the app, or Settings › your name › Subscriptions on your iPhone or iPad. If you bought the lifetime unlock while subscribed, cancel the subscription there so it doesn't renew.</dd></div>
+      <div><dt>I have a code from a friend</dt><dd>Open Settings › Purchases › Redeem code in the app, or in the App Store tap your account picture › Redeem Gift Card or Code.</dd></div>
+      <div><dt>Moving shows between devices</dt><dd>More › Show file › Save or Share writes one file with your scenes, cues, patch, faders, stages and floor plans. Open it on any iPhone, iPad or Android phone running GSukaj Remote.</dd></div>
+    </dl>
+  </section>
+
+  <section id="privacy" aria-labelledby="privacy-h">
+    <h2 id="privacy-h">Privacy policy</h2>
+    <p class="label">Effective 13 October 2026</p>
+    <p>GSukaj Remote is made by Gylsen Sukaj in the United Kingdom. In short: the app does not collect personal data, has no account, no ads, no analytics and no tracking. Your shows stay on your device.</p>
+
+    <h3>What stays on your device</h3>
+    <ul>
+      <li>Your shows, scenes, cue lists, patch, stages, floor-plan pictures and settings are stored only on your device.</li>
+      <li>Floor-plan photos you choose or take are shrunk and kept on your device. They leave it only inside a show file that you save or share yourself.</li>
+      <li>Camera images used to pick a colour are read on the device and not stored or sent anywhere.</li>
+    </ul>
+
+    <h3>Network and Bluetooth</h3>
+    <ul>
+      <li><strong>Local network:</strong> the app sends lighting data (sACN, Art-Net) to devices on your own network and can listen for lighting data and OSC sent to it. This traffic stays on your network.</li>
+      <li><strong>Bluetooth:</strong> used to find GSukaj receivers, set them up and send DMX to Bluetooth DMX devices near you.</li>
+      <li><strong>Fixture library:</strong> when you search the online fixture library, the app downloads fixture definitions from the Open Fixture Library on GitHub. Like any website, GitHub sees your device's IP address for that request. Nothing about you or your shows is sent.</li>
+    </ul>
+
+    <h3>Purchases</h3>
+    <p>The yearly subscription and its free trial, the lifetime unlock and offer codes are handled by Apple through the App Store (or by Google Play on Android). We never see your payment details. The app only checks with the store whether the subscription or unlock is active on your account. Terms of use: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard licence agreement</a>.</p>
+
+    <h3>Children</h3>
+    <p>The app is a professional lighting tool and is not directed at children. It collects no personal data from anyone.</p>
+
+    <h3>Your rights</h3>
+    <p>Because we hold no personal data about you, there is nothing for us to access, correct or delete. Deleting the app removes everything it stored on your device. If you contact support by email, your message is used only to answer you and deleted when it's no longer needed.</p>
+
+    <h3>Changes</h3>
+    <p>If this policy changes, the new version will be posted here with a new effective date.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about privacy: use the support contact above.</p>
+  </section>
+
+  <footer>© 2026 Gylsen Sukaj. All rights reserved. Art-Net™ Designed by and Copyright Artistic Licence Engineering Ltd. sACN is ANSI E1.31 (ESTA).</footer>
+</div>
+
+</body>
+</html>
